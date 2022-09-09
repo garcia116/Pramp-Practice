@@ -37,30 +37,30 @@ public class MyClass {
         return result;
     }
     
-    public static void helper(String prev_key, Map<String, Object> dictionary, Map<String,String> result){
+   public static void helper(String initial_key, Map<String, Object> dictionary, Map<String,String> result){
         for(String key: dictionary.keySet()){
             
             Object value = dictionary.get(key);
             
             if(value instanceof String) {
-                if(prev_key == null || prev_key.equals("")){
+                if(initial_key == null || initial_key.equals("")){
                     result.put(key, String.valueOf(value));
                 }
                 else{
                     if(key == null || key.equals("")){
-                        result.put(prev_key, String.valueOf(value));
+                        result.put(initial_key, String.valueOf(value));
                     }
                     else{
-                        result.put(prev_key + "." + key, String.valueOf(value));
+                        result.put(initial_key + "." + key, String.valueOf(value));
                     }
                 }
             }
             else{
-                if(prev_key == null || prev_key.equals("")){
+                if(initial_key == null || initial_key.equals("")){
                     helper(key, (HashMap<String, Object>) value, result);
                 }
                 else{
-                    helper(prev_key + "." + key, (HashMap<String, Object>) value, result);
+                    helper(initial_key + "." + key, (HashMap<String, Object>) value, result);
                 }
             }
         }
