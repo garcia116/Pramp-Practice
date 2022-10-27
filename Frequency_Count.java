@@ -1,8 +1,15 @@
+/*
+We want to find the most frequently used words in a long string of text. 
+Write a function most_common_words(text) that returns an array containing words 
+with their frequencies, sorted from most common to least common, with ties broken by 
+alphabetic order.
+*/
+
 import java.util.*;
 import java.io.*;
 public class MyClass {
     public static void frequency_count(String str){
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new TreeMap<>();
         
         String arr[] = str.split(" ");
         
