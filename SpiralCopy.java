@@ -48,7 +48,7 @@ class Solution {
             result[index++] = inputMatrix[j][colEnd];
         }
         colEnd--;
-
+      
         if(rowBegin <= rowEnd) {
             // Traverse Left
             for (int j = colEnd; j >= colBegin; j --) {
@@ -58,12 +58,12 @@ class Solution {
         rowEnd--;
 
         if(colBegin <= colEnd) {
-            // Traver Up
+            // Traverse Up
             for (int j = rowEnd; j >= rowBegin; j --) {
                 result[index++] = inputMatrix[j][colBegin];
             }
         }
-        colBegin ++;
+        colBegin++;
     }
 
     return result;
