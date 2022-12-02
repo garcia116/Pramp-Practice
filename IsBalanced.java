@@ -1,7 +1,9 @@
 /*
 Balanced Tree
 
-When using a tree data structure, it's common for the tree to become unbalanced over time due to the insertion order of nodes, which can in turn affect the performance of our programs. Let's define a balanced tree as one where the difference in height of the left and right subtrees is at most one, for all nodes in the given tree. Write a function is_balanced(node) that determines whether a binary tree is balanced or not.
+When using a tree data structure, it's common for the tree to become unbalanced over time due to the insertion order of nodes, which can in turn 
+affect the performance of our programs. Let's define a balanced tree as one where the difference in height of the left and right subtrees is at most one,
+for all nodes in the given tree. Write a function is_balanced(node) that determines whether a binary tree is balanced or not.
 
 Input: The root node of a binary tree
 
