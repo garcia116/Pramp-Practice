@@ -14,7 +14,7 @@ Assume you are given the root node of a tree that conforms to the following inte
 class Node {
   left: Node
   right: Node
-  value: any
+  height: int
 }
 Examples
 Example 1: Balanced
